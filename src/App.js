@@ -7,7 +7,7 @@ const App = () => {
 
   useEffect(() => {
     async function handleGetUsers() {
-        const response = await fetch('http://api.douglascavalcante.link/users')
+        const response = await fetch('https://api.douglascavalcante.link/users')
         const data = await response.json()
         setUsers(data)
     }
